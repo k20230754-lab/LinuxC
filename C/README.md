@@ -457,7 +457,7 @@ int main() {
 }
 ```
 
-正确写法
+正确写法：\n强行刷新缓冲区
 ``` c++
 #include <stdlib.h>
 #include <stdio.h>
