@@ -483,7 +483,15 @@ int main() {
 }
 ```
 
-> scanf 在使用 `%s` 的时候要特别小心——越界
+> scanf 在使用 `%s` 的时候要特别小心——越界；根本原因：%s 不限制输入长度。scanf 的 %s 本质上会：
+
+从输入流中读取一个“单词”（不含空白符）；
+
+一直写入目标缓冲区；
+
+没有自动检查数组大小。
+
+所以它并不知道 str 只能装 10 个字节，它只管写。
 
 ``` c++
 #include <stdio.h>
@@ -535,10 +543,11 @@ int main() {
   printf("i = %d, c = %c", i, c);
 }
 ```
+<img width="838" height="353" alt="image" src="https://github.com/user-attachments/assets/3e943355-1673-4a29-b3da-fbfa5d3dc407" />
 
 
 # 流程控制
-跳过
+有限状态机——思考方式，解决复杂流程的得力工具
 
 # 数组
 构造类型 连续存放
