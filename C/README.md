@@ -548,6 +548,19 @@ int main() {
 
 # 流程控制
 有限状态机——思考方式，解决复杂流程的得力工具
+if else——else只与离它最近的if相匹配 ；if后执行的如果超过一句了，就加上一个大括号
+switch-case
+switch(exp)
+{
+case 常量或常量表达式：
+break;
+default:不符合以上情况时（重要） 
+}
+<img width="627" height="263" alt="image" src="https://github.com/user-attachments/assets/8bc7dd0a-aa0c-4dd6-a18e-d9be264fda63" />
+-循环
+<img width="476" height="373" alt="image" src="https://github.com/user-attachments/assets/fe92f2dd-2621-4ec1-8602-587878b14a8b" />
+<img width="535" height="401" alt="image" src="https://github.com/user-attachments/assets/21ce6808-2664-4cf3-a5e8-60f24cd6d3f6" />
+
 
 # 数组
 构造类型 连续存放
